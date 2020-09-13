@@ -106,7 +106,7 @@ public class ArchiveAdapt extends RecyclerView.Adapter<ArchiveAdapt.viewHolder> 
             @Override
             public void onClick(View v) {
                 holder.expandableLayout.setVisibility(View.VISIBLE);
-                holder.titleText.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.MATCH_PARENT));
+                holder.titleText.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
                 Index=holder.getAdapterPosition();
 
 

@@ -105,8 +105,8 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.viewHolder
             @Override
             public void onClick(View v) {
                 holder.expandableLayout.setVisibility(View.VISIBLE);
-                holder.titleText.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.MATCH_PARENT));
 
+                holder.titleText.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
 
                 Random random =new Random();
                 int color=Color.argb(255,random.nextInt(256),random.nextInt(256),random.nextInt(256));
