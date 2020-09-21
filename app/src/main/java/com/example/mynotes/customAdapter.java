@@ -65,6 +65,7 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.viewHolder
     @Override
     public void onBindViewHolder(@NonNull final viewHolder holder, final int position) {
        Log.i("reached","the holder popsition is"+position);
+        holder.titleText.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
 
         holder.notesText.setText(Notes.get(position));
         holder.dateText.setText(Date.get(position));
